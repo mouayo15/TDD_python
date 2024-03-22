@@ -40,5 +40,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        python RPG_CI_TEST/test_personnage.py
+        export PYTHONPATH=RPG_CI
+        pytest
+        
         
