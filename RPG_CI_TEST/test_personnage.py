@@ -1,4 +1,4 @@
-from personnage import Personnage
+from RPG_CI.Personnage import Personnage
 
 def test_hp_initiaux():
     personnage = Personnage()
@@ -18,6 +18,6 @@ def test_attaquer_autre_personnage():
     attaquant = Personnage()
     adversaire = Personnage()
     point_de_vie_avant_attaque = adversaire.get_point_de_vie()
-    degat = 10  # Assuming the attacker's power is 10
+    degat = 10  
     attaquant.attaquer(adversaire, degat)
     assert adversaire.get_point_de_vie() == point_de_vie_avant_attaque - degat
