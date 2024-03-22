@@ -40,5 +40,5 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        python test_personnage.py
+        python RPG_CI_TEST/test_personnage.py
         
